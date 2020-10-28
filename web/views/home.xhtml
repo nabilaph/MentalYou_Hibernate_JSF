@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Home</title>
+        <ui:include src="layouts/head.xhtml"/>
+        <h:outputStylesheet library="css" name="projekhome.css"/>
+    </h:head>
+    <h:body>
+         <ui:include src="layouts/navbar.xhtml"/>
+        <!-- scroll content 1 -->
+        <div id="content1">
+                <div class="icon1">
+                    <img src="../public/assets/backend/img/Mental.png" alt="yoga-icon" width="420" height="420"></img>
+                </div>
+                <div class="quotes1">
+                    <h1>love your <br></br>
+                        <span style="color: #6c2e2e;">mental health</span>,
+                        <br></br>
+                        love <span style="color: #6c2e2e;">yourself</span>
+                    </h1>
+                </div>
+                <div class="chev">
+                    <a href="#"><i class="fas fa-chevron-down"></i></a>
+                </div>    
+        </div>
+        <!-- scroll content 2 -->
+        <div id="content2" style="background-image: url(../public/assets/backend/img/bgpage2.png);">
+            <div class="quotes2">
+                <h1>heal your stressful day <br></br>
+                    by reading our articles <br></br>
+                    and you can <span style="color: #6c2e2e;">talk to us</span>!
+                </h1>
+                <h3><a href="consultation">check out more!</a></h3>
+            </div>
+        </div>
+        <!-- scroll content 3 -->
+        <div id="content3">
+            <img src="../public/assets/backend/img/manyface.jpeg" alt="manyface" width="550" height="385"></img>
+            <div class="quotes3">
+                <h1>check our articles for a lot of insightful 
+                    information about mental health
+                </h1>
+                <h3><a href="article">go to articles 
+                    <i class="fas fa-long-arrow-alt-right" style="font-size: 30px;"></i>
+                    </a>
+                </h3>
+            </div>
+        </div>
+        <ui:include src="layouts/footer.xhtml"/>
+        <ui:include src="layouts/scripts.xhtml"/>
+    </h:body>
+</html>
+

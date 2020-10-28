@@ -1,0 +1,28 @@
+<ui:composition
+     xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+    const scrolltop = document.querySelector("#btnScrollToTop");
+
+    scrolltop.addEventListener("click", function(){
+    window.scrollTo({
+        top: 0,
+        left : 0,
+        behavior: "smooth",
+    });
+});
+
+const scroll = document.querySelector(".chev");
+
+scroll.addEventListener("click", function(){
+    window.scrollTo({
+        top: 625,
+        left : 0,
+        behavior: "smooth",
+    });
+});
+</script> 
+</ui:composition>

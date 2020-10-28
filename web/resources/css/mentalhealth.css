@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: none repeat scroll 0 0;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+@font-face{
+    font-family: 'Hammersmith One';
+    src: url("#{resource['font/HammersmithOne-Regular.ttf']}");
+    font-weight: normal;
+    font-style: normal;
+}
+
+#btnScrollToTop{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #6c2e2e;
+    font-size: 25px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border: none;
+}
+
+#btnScrollToTop:active{
+    background: #8b4242;
+}
+
+.nav{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.nav ul{
+    margin: 45px 0 0 0;
+    list-style: none;
+    text-align: right;
+}
+
+.nav ul li{
+    float: none;
+    display: inline-block;
+}
+
+.nav ul li:nth-child(1){
+    float: left;
+}
+
+.nav ul li:nth-child(2){
+    float: left;
+}
+
+.nav ul li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 60px;
+}
+
+.nav ul li a:hover{
+    color: #6c2e2e;
+}
+
+#menu{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    background-color: #fff3d1;
+    border-color: #fff3d1 ;
+    border-style: solid;
+    border-width: 10px 0;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    content: "";
+    margin-left: -85px;
+}
+
+.profile{
+    font-size: 30px;
+    float: right;
+    margin: -43px 35px 0 0;
+}
+
+.profile a i {
+    padding: 10px 20px 10px 20px;
+    color: #6c2e2e;
+    text-align: center;
+    padding: 5px;
+}
+
+.profile a i:hover{
+    border-radius: 20%;
+    background-color: #f1d4cd;
+}
+
+/*scroll content*/
+#content1 .img {
+    width: 100%;
+    height: 500px;
+}
+
+.ijo{
+    position: absolute;
+    left: -400px;;
+}
+.quotes1{
+    position: absolute;
+    top: 200px;
+    text-align: center;
+    line-height: 1.4;
+    left: 500px;   
+}
+
+.img{
+   top: 150px;
+    position: absolute;
+}
+
+#content2{
+    width: 100%;
+    height: auto;
+    background-size : 100% 600px;
+    right: 100px;
+
+}
+
+.image{
+    top: 600px;
+    position: absolute;
+}
+
+.quotes2{
+    position: absolute;
+    top: 600px;
+    text-align: center;
+    line-height: 1.4;
+    left: 250px;   
+}
+
+#content3{
+    background-color:#fff3d1 ;
+    width: 100%;
+    height: 450px;
+}
+
+.ungu{
+    position: absolute;
+    top: 1100px;
+    left: 100px;
+}
+
+.quotes3{
+    position: absolute;
+    top: 1050px;
+    text-align: center;
+    line-height: 1.4;
+    left: 600px;
+}
+
+.background{
+    position: absolute;
+    top: 1000px;
+}
+
+#footer{
+    position: absolute;
+    background-color: #fff3d1;
+    height: 250px;
+    top: 1500px;
+    width: 100%;
+}
+
+#footer > h4{
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+}
+
+.socmed {
+    width: 100%;
+    font-size: 30px; 
+    text-align: center;
+}
+
+.socmed a{
+    color: #6c2e2e; 
+    text-decoration: none;
+    padding: 0 0.5cm 0 0.5cm;
+}
+
+.socmed a:hover{
+    color: #f1d4cd;;
+}
+
+#footer > img{
+    position: relative;
+    margin-left: 46%;
+}

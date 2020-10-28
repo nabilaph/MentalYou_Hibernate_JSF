@@ -1,0 +1,25 @@
+<ui:composition
+     xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets">       
+<div id="menu">
+            <div class="logo">
+                <a href="/MentalYou/"><img src="../../public/assets/backend/img/MentalYou-logo.png" alt="MentalYou-logo" width="120" height="120"></img></a>
+                
+            </div>
+            <div class="nav">
+                <nav>
+                     <ul>
+                        <li><h:link outcome="home" value="home"/></li>
+                        <li><h:link outcome="about" value="about us"/></li>
+                        <li><h:link outcome="article" value="articles"/></li>
+                        <li><h:link outcome="consul" value="consultation"/></li>   
+                    </ul>
+                </nav>
+            </div>
+                <div class="profile">
+                    <h:link outcome="#{userBean.checkLoginP()}"><i class="fas fa-user-circle"></i></h:link>  
+                </div>
+        </div>
+</ui:composition> 

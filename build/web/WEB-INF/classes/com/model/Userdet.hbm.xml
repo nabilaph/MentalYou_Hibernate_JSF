@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 26, 2020 12:55:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.model.Userdet" table="userdet" catalog="mentalhealth" optimistic-lock="version">
+        <id name="userdetId" type="java.lang.Integer">
+            <column name="userdet_id" />
+            <generator class="identity" />
+        </id>
+        <property name="userUsername" type="string">
+            <column name="user_username" length="50" not-null="true" />
+        </property>
+        <property name="userdetEmail" type="string">
+            <column name="userdet_email" length="50" not-null="true" />
+        </property>
+        <property name="userdetFullname" type="string">
+            <column name="userdet_fullname" length="100" not-null="true" />
+        </property>
+        <property name="userdetNickame" type="string">
+            <column name="userdet_nickame" length="40" not-null="true" />
+        </property>
+        <property name="userdetBday" type="date">
+            <column name="userdet_bday" length="10" not-null="true" />
+        </property>
+        <property name="userdetPhone" type="string">
+            <column name="userdet_phone" length="12" not-null="true" />
+        </property>
+        <property name="userdetPackage" type="string">
+            <column name="userdet_package" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

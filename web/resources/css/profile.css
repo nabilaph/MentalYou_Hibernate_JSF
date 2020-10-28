@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: 'Hammersmith One';
+    src: url("#{resource['font/HammersmithOne-Regular.ttf']}");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background: none repeat scroll 0 0;
+    font-family: 'Hammersmith One';
+    src: url("#{resource['font/HammersmithOne-Regular.ttf']}");
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5em;
+}
+
+#btnScrollToTop{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #6c2e2e;
+    font-size: 25px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border: none;
+}
+
+#btnScrollToTop:active{
+    background: #8b4242;
+}
+
+.nav{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.nav ul{
+    margin: 45px 0 0 0;
+    list-style: none;
+    text-align: right;
+}
+
+.nav ul li{
+    float: none;
+    display: inline-block;
+}
+
+.nav ul li:nth-child(1){
+    float: left;
+}
+
+.nav ul li:nth-child(2){
+    float: left;
+}
+
+.nav ul li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 60px;
+}
+
+.nav ul li a:hover{
+    color: #6c2e2e;
+}
+
+#menu{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    background-color: #fff3d1;
+    border-color: #fff3d1 ;
+    border-style: solid;
+    border-width: 10px 0;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: "";
+    margin-left: -85px;
+    margin-top: -18px;
+}
+
+.profile{
+    font-size: 30px;
+    float: right;
+    margin: -43px 35px 0 0;
+}
+
+.profile a i {
+    padding: 10px 20px 10px 20px;
+    color: #6c2e2e;
+    text-align: center;
+    padding: 5px;
+}
+
+.profile a i:hover{
+    border-radius: 20%;
+    background-color: #f1d4cd;
+}
+
+.headertext{
+    font-family: 'playfair';
+    font-size: 40px;
+    z-index: 3;
+    top: -36%;
+    left: 20%;
+    width: 500px;
+    position: relative;
+    text-shadow: -10px 13px#fff3d1; 
+}
+
+#content1{
+    position: absolute;
+    background-color:#fff3d1 ;
+    width: 100%;
+    height: 450px;
+
+}
+
+.table1{
+    position: absolute;
+    top: -110px;
+    left: -90px;
+    text-align: left;
+}
+
+.table2{
+    position: relative;
+    top: 450px;
+    left: -250px;
+}
+
+.row{
+    background-color:#fff3d1; 
+}
+
+h3{
+    color: #6b2f2f;
+    text-shadow: -10px 13px#fff3d1; 
+    font-size: 30pt; 
+}
+
+.gambar{
+    position: absolute;
+    top: 109px;
+}
+
+#comp{
+    position: absolute;
+    top: 700px;
+    left: -30px;
+    background-color: #fff3d1;
+    border-color: #fff3d1;
+}
+
+.submit-text{
+    position: absolute;
+    top: 800px;
+    left: 130px;
+    background-color: #f0d4cc;
+    color: #6b2f2f;
+    border: none;
+}
+
+.quotes1{
+    position: absolute;
+    top: 150px;
+    text-align: center;
+    line-height: 1.4;
+    left: 500px;   
+}
+
+.btnedit > a{
+    position: absolute;
+    text-decoration: none;
+    color: #6b2f2f;                                      
+    background-color: #fef3d1;                                       
+    border-radius: 20%;                                       
+    padding: 10px;
+    top: 250px;
+    left: -300px;
+}   
+
+.btnedit > a:hover{
+    position: absolute;
+    background-color: #8f6b67;
+    color: #fef3d1;
+}
+
+#btnlogout > a{
+    position: absolute;
+    float: left;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #6b2f2f;                                      
+    background-color: #fef3d1; 
+    border-radius: 20%;                                       
+    padding: 10px;
+    bottom: -550px
+}
+
+#btnlogout > a:hover{
+    background-color: #8f6b67;
+    color: #fef3d1;
+}
+
+#footer{
+    padding-top: 1100px;
+    background-color: #fff3d1;
+    height: 250px;
+}
+
+#footer > h4{
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+}
+
+.socmed {
+    width: 100%;
+    font-size: 30px; 
+    text-align: center;
+}
+
+.socmed a{
+    color: #6c2e2e; 
+    text-decoration: none;
+    padding: 0 0.5cm 0 0.5cm;
+}
+
+.socmed a:hover{
+    color: #f1d4cd;;
+}
+
+#footer > img{
+    position: relative;
+    left: 46%;  
+}
+

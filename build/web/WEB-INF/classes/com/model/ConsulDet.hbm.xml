@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 26, 2020 12:55:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.model.ConsulDet" table="consul_det" catalog="mentalhealth" optimistic-lock="version">
+        <id name="consulId" type="java.lang.Integer">
+            <column name="consul_id" />
+            <generator class="identity" />
+        </id>
+        <property name="userUsername" type="string">
+            <column name="user_username" length="50" not-null="true" />
+        </property>
+        <property name="consulDate" type="date">
+            <column name="consul_date" length="10" not-null="true" />
+        </property>
+        <property name="consulTime" type="time">
+            <column name="consul_time" length="8" not-null="true" />
+        </property>
+        <property name="consulDoctor" type="string">
+            <column name="consul_doctor" length="50" not-null="true" />
+        </property>
+        <property name="consulVia" type="string">
+            <column name="consul_via" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

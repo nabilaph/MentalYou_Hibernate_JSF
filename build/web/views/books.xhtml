@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+          <style type="text/css">
+              
+              #h_commandButtonid{
+                  background-color: #926a69;
+                  color: #f0d4cc;
+                  padding: 2px;
+                  font-family: 'Hammersmith One', sans-serif;
+                  font-size: 18px;
+              }
+
+          </style>
+    <h:head>
+        <title>MentalYou - Books Article</title>
+        <ui:include src="layouts/head.xhtml"/>
+        <h:outputStylesheet library="css" name="books.css"/>
+    </h:head>
+    <h:body>
+        <ui:include src="layouts/navbar.xhtml"/>
+        <!--content1-->
+        <div id="content1">
+            <h1> <span style="color: #6c2e2e;">This Week Books</span> </h1>
+            <div class="iconbk">
+                <img src="../public/assets/backend/img/pinkbg.png" alt="pinkbg" width="720" height="400"/>
+            </div>
+            <div class="iconbk2">
+                <img src="../public/assets/backend/img/line.png" alt="lineimg" width="350" height="350"/>
+            </div>
+            <div class="iconbk3"> 
+                <img src="../public/assets/backend/img/book2.jpg" alt="book2" width="300" height="380"/>
+            </div>
+            <div class="quotes1">
+                <h2>How Your Mind Can Heal Your Body</h2>
+                <p>Author Dr. David Hamilton has shared <br></br> 
+                    some radical explanations of what <br></br> 
+                happens to our body at the cellular level <br></br>
+                when we have poor mental health. <br></br> 
+                The book covers an A to Z list of how we can <br></br> 
+                use imagery as a healing mechanism for <br></br> 
+                    chronic pain and other 
+                    physical conditions.</p>
+                <h:commandButton action="https://storelafr7.firebaseapp.com/aa053/how-your-mind-can-heal-your-body-by-david-r-hamilton-1401921485.pdf" 
+                                 value="Download PDF Here" id="h_commandButtonid" />
+            </div>
+        </div>
+        <!--content2-->
+        <div id="content2">
+            <div class="image">
+                <div class="iconbk4">
+                    <img src="../public/assets/backend/img/pinkbg.png" alt="pinkbg" width="500" height="300"/>    
+                    <div class="iconbk5">
+                        <img src="../public/assets/backend/img/flowerimg.png" alt="flowerimg" width="350" height="400"/>     
+                    </div>
+                    <div class="iconbk6">
+                        <img src="../public/assets/backend/img/book3.jpg" alt="book3" width="300" height="380"/>
+                    </div>
+                </div>
+            </div>
+            <div class="quotes2">
+                <h2>The Mind-Gut Connection</h2>
+                <p>It discusses the underlying causes of some <br></br> regular phenomena, such as, why we feel <br></br> nauseated when we are nervous, 
+                    or why some <br></br> people feel bloated during times of distress.</p>
+                    <h3><h:commandButton action="https://www.researchgate.net/publication/305680906_The_Mind-Gut_Connection" 
+                                id="h_commandButtonid" value="Download PDF Here"/></h3>    
+            </div>
+        </div>
+        <!--content3-->
+        <div id="content3">
+            <div class="image2">
+                <div class="iconbk7">
+                    <img src="../public/assets/backend/img/pinkbg.png" alt="pinkbg" width="900" height="400"/>
+                </div>
+                <div class="iconbk8">
+                    <img src="../public/assets/backend/img/line.png" alt="line" width="500" height="350"/>
+                </div>
+                <div class="iconbk9">
+                    <img src="../public/assets/backend/img/book1.png" alt="book3" width="300" height="380"/>
+                </div>
+            </div>
+            <div class="quotes3">
+                <h2>(Don't) Call Me Crazy</h2>
+                <p>Don't Call Me Crazy talks about the social <br></br> aspects that make mental illness worse than <br></br> it is. How we look at others
+                     with mental illness <br></br> can impact their wellbeing to a large extent.</p>
+                     <h3><h:commandButton action="http://sidithofaghi.over-blog.com/2019/12/book-downloading-pdf-don-t-call-me-crazy-33.html" 
+                                 value="Download PDF Here" id="h_commandButtonid"/></h3>
+            </div>
+        </div>
+        <ui:include src="layouts/footer.xhtml"/>
+        <ui:include src="layouts/scripts.xhtml"/>
+    </h:body>
+</html>
+

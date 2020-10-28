@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Log In</title>
+        <ui:include src="layouts/head.xhtml"/>
+        <h:outputStylesheet library="css" name="login.css"/>
+    </h:head>
+    <h:body>
+         <!--content1-->
+        <div id="content1">
+            <div class="logo">
+                <img src="../public/assets/backend/img/MentalYou-logo.png" alt="logo" width="300" height="300"></img>
+            </div>
+            <h:form id="login" class="form-group">
+                <h1>LOGIN</h1>
+                <div class="username">
+                    <label>Username   </label>
+                    <p:inputText id="login-username" class="control-name" value="#{userBean.newuser.userUsername}" 
+                                 required="true" requiredMessage="*Username is required"/>
+                    <h:message for="login-username" class="msg-username"></h:message>
+                </div>
+                <div class="pass">
+                    <label>Password   </label>
+                    <p:password id="login-pass" class="control-pass" value="#{userBean.newuser.userPassword}" 
+                                required="true" requiredMessage="*Password is required"/>
+                    <h:message for="login-pass" class="msg-pass"></h:message>
+                </div>
+                <div class="btn">
+                    <h:commandButton class="submit-btn" value="LOGIN" actionListener="#{userBean.logIn()}"></h:commandButton>
+                    <h:link value="Click Here To Create An Account" outcome="signup"/>  
+                    <h:messages id="wrongLogin" class="wrong-user"/>
+                </div>
+            </h:form>
+        </div>
+         <!-- footer -->
+         <ui:include src="layouts/footer.xhtml"/>
+         <ui:include src="layouts/scripts.xhtml"/>
+    </h:body>
+</html>
+

@@ -1,0 +1,212 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 20, 2020, 6:50:52 AM
+    Author     : Acer
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: 'Hammersmith One';
+    src: url("#{resource['font/HammersmithOne-Regular.ttf']}");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background: none repeat scroll 0 0;
+    font-family: 'Hammersmith One';
+    src: url("#{resource['font/HammersmithOne-Regular.ttf']}");
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5em;
+    text-decoration: none;
+}
+
+#btnScrollToTop{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #6c2e2e;
+    font-size: 25px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border: none;
+}
+
+#btnScrollToTop:active{
+    background: #8b4242;
+}
+
+#content1{
+    background-color:#fff3d1 ;
+    width: 100%;
+    height: 800px;
+}
+
+.logo{
+    position: absolute;
+    left: 540px;
+}
+
+#signup{
+    position: absolute;
+    background-color:  #f0d4cc;
+    color: #8f6b67;
+    margin-top: 300px;
+    text-align: left;
+    left: 320px;
+    height: 530px;
+    width: 700px;
+    padding-top: 50px;
+    padding-left: 50px;
+    line-height: 70px;
+}
+
+.submit-btn:hover{
+    color: #fff3d1;
+}
+
+.btn a:hover{
+    color: #fff3d1;
+}
+
+.submit-btn{
+    position: absolute;
+    text-decoration: none;
+    color: #8f6b67;
+    background-color:#f0d4cc;
+    border-style: solid;
+    border-color: #8f6b67;
+    width: 100px;
+    height: 30px;
+    right: 340px;
+    top: 450px;
+    align-content: center;
+}
+
+.btn > a{
+    position: absolute;
+    text-decoration: none;
+    color: #6c2e2e;
+    top: 500px;
+    left: 240px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.control-name{
+    position: absolute;
+    background-color: #f0d4cc;
+    border-color: #8f6b67;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    left: 50px;
+    top: 180px;
+    width: 600px;
+    color: #6c2e2e;
+}
+
+.msg-username{
+    color: #6c2e2e;
+}
+
+.control-email{
+    position: absolute;
+    background-color: #f0d4cc;
+    border-color: #8f6b67;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    left: 50px;
+    top: 250px;
+    width: 600px;
+    color: #6c2e2e;
+}
+
+.msg-email{
+    color: #6c2e2e;
+}
+
+.control-password{
+    position: absolute;
+    background-color: #f0d4cc;
+    border-color: #8f6b67;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    left: 50px;
+    top: 320px;
+    width: 600px;
+    color: #6c2e2e;
+}
+
+.msg-pass{
+    color: #6c2e2e;
+}
+
+.confirm_password{
+    position: absolute;
+    background-color: #f0d4cc;
+    border-color: #8f6b67;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    left: 50px;
+    top: 391px;
+    width: 600px;
+    color: #6c2e2e;
+}
+
+.msg-repass{
+    color: #6c2e2e;
+}
+
+#footer{
+    padding-top: 100px;
+    background-color: #fff3d1;
+    height: 250px;
+}
+
+#footer > h4{
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+}
+
+.socmed {
+    width: 100%;
+    font-size: 30px; 
+    text-align: center;
+}
+
+.socmed a{
+    color: #6c2e2e; 
+    text-decoration: none;
+    padding: 0 0.5cm 0 0.5cm;
+}
+
+.socmed a:hover{
+    color: #f1d4cd;;
+}
+
+#footer > img{
+    position: relative;
+    left: 46%;  
+}
